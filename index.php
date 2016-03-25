@@ -1,7 +1,29 @@
 <?php
+$text1 = 'Ovaj tekst uopce nije plagijat onome koji sljedi';
+$text2 = 'O ovom tekstu smo pricali u prethodnoj varijabli';
+
+similar_text($text1, $text2, $rezultat);
+	echo 'Rezultat sličnosti je: ' . $rezultat;
 
 
-/**********************************************
+/***********OBRNUTI*ISPIS*******************
+$string = 'Ovdje ima cetiri rijeci';
+$string_reversed = strrev($string);  //funkcija koja ispisuje string obrnuto.
+echo $string_reversed; 
+*********************************************/
+
+/*****************RANDOM*MJESA*SLOVA**********
+$string = 'Ovdje ima cetiri rijeci';
+$string_shuffled = str_shuffle($string); //spremamo u varijablu funkciju koja randomizira slova iu $string-a.
+
+$half = substr($string_shuffled, 0, strlen($string)/2); //spremamo u varijablu $half funkciju koja uzima $string_shuffled te ogranicava broj znakova uzetih u obzir u ovom slučaju pola od $string
+
+echo $string_shuffled . '<br>';
+echo strlen($string);
+echo '<br>' . $half;
+**********************************************/
+
+/*************BROJI*RIJECI********************
 $string = 'Ovdje ima cetiri rijeci.';
 $string_word_count = str_word_count($string, 2, '.');  // Funkcija koja broji riječi ili ih smjesta u array ovisno dal je 0,1 ili 2. echo samo za 0.
 print_r($string_word_count);
