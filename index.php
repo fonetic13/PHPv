@@ -1,10 +1,13 @@
 <?php
+
+
+/***************USPOREDJIVANJE*2*STRINGA****
 $text1 = 'Ovaj tekst uopce nije plagijat onome koji sljedi';
 $text2 = 'O ovom tekstu smo pricali u prethodnoj varijabli';
 
-similar_text($text1, $text2, $rezultat);
-	echo 'Rezultat sličnosti je: ' . $rezultat;
-
+similar_text($text1, $text2, $rezultat); //Funkcija usporedjuje sličnost 2 stringa te vraća vrijednost u postotku.
+	echo 'Rezultat sličnosti je: ' . $rezultat . '%';
+*******************************************/
 
 /***********OBRNUTI*ISPIS*******************
 $string = 'Ovdje ima cetiri rijeci';
