@@ -1,5 +1,9 @@
 <?php
+$string = '&nbsp;Ovaj tekst ima whitespace na pocetki i na kraju .&nbsp;';
+$string_trimed = trim($string);
 
+echo $string_trimed . '<br>';
+echo $string;
 
 /***************USPOREDJIVANJE*2*STRINGA****
 $text1 = 'Ovaj tekst uopce nije plagijat onome koji sljedi';
