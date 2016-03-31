@@ -1,5 +1,9 @@
 <?php
-
+/***************ASOCIJATIVNA*POLJA*******************************
+$auti = array('AUDI'=>'PILA', 'MECKA'=>'KANTA', 'BMW'=>'PILA');
+echo $auti['AUDI'] . '<br>';
+echo $auti['MECKA'];
+*****************************************************************/
 
 /******************************POLJA*SA*FOR*PETLJOM******************************************************
 $auti = array('BMW', 'AUDI', 'PORCHE', 'RENAULT'); // Deklariranje array-a i unos vrijednosti u array.
