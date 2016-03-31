@@ -1,4 +1,12 @@
 <?php
+
+
+/*********************MULTIDIMENZIONALNA*POLJA(2DIMENZIONALNA)*************************************
+$hrana = array('ZDRAVA'=>array('mango', 'špinat', 'banane'),'NEZDRAVA'=>array('pizza', 'sladoled', 'čvarci')); // polje unutar polja čine 2dimenzionalno polje.
+
+echo $hrana['NEZDRAVA'][0]; //Ispis člana polja, "pizza"
+**************************************************************************************************/
+
 /***************ASOCIJATIVNA*POLJA*******************************
 $auti = array('AUDI'=>'PILA', 'MECKA'=>'KANTA', 'BMW'=>'PILA');
 echo $auti['AUDI'] . '<br>';
