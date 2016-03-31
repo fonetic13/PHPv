@@ -1,8 +1,11 @@
 <?php
+
+
 /******************************POLJA*SA*FOR*PETLJOM******************************************************
 $auti = array('BMW', 'AUDI', 'PORCHE', 'RENAULT'); // Deklariranje array-a i unos vrijednosti u array.
-for ($i = 0; $i <= 3; $i++){                       // Ispis svakog elementa polja zasebno kroz for petlju.
-	if($i<3){
+$auti[4]='POLIC';                                  //Rucno dodavanje elemanta u polje.
+for ($i = 0; $i <= 4; $i++){                       // Ispis svakog elementa polja zasebno kroz for petlju.
+	if($i<4){
 		echo $auti[$i] . ', ';
 	}
 	else
@@ -10,9 +13,11 @@ for ($i = 0; $i <= 3; $i++){                       // Ispis svakog elementa polj
 		echo $auti[$i] . '.';
 	}
 }
+
 echo '<br>'; //Nova linija
 echo print_r($auti); //Ispisuje cijeli sadržaj polja sa vrijednostima mjesta.
 **********************************************************************************************************/
+
 /***************USPOREDJIVANJE*2*STRINGA****
 $text1 = 'Ovaj tekst uopce nije plagijat onome koji sljedi';
 $text2 = 'O ovom tekstu smo pricali u prethodnoj varijabli';
