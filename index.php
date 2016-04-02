@@ -1,11 +1,24 @@
 <?php
+
+if (isset($_GET['user_name']) and !empty($_GET['user_name'])){
+	$user_name = $_GET['user_name'];
+	
+	if($user_name =='ivan'){
+		echo 'Dobrodošao administratore Ivane!';
+	}
+	else
+	{
+		echo 'Pogrešni podaci, pokušaj ponovo!';
+	}
+}
+
 /***************strlen()***********************************************
 $tekst = 'Ovo je tekst. ';
 $slova = strlen($tekst);
 
 for($i=1;$i<=$slova;$i++);
 	echo 'Tekst se sastoji od '.$i.' znakova!'.'<br>';
-***********************************************************************
+***********************************************************************/
 
 /*****************************FOREACH*PETLJA*******************************************************
 $stvari = array('Ivan'=>array('Kompjuter','NAS', 'Mobitel'),'Monika'=>array('Šminka','Torbica', 'grudnjak'));
@@ -119,3 +132,7 @@ switch ($dan){
 	break;
 }***********************************************/
 ?>
+<form action="index.php" method="GET">
+	Korisničko ime: <input type="text" name="user_name">
+	<input type="submit" value="Submit">
+</form>
