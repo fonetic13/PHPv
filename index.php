@@ -1,5 +1,22 @@
 <?php
+/***************strlen()***********************************************
+$tekst = 'Ovo je tekst. ';
+$slova = strlen($tekst);
 
+for($i=1;$i<=$slova;$i++);
+	echo 'Tekst se sastoji od '.$i.' znakova!'.'<br>';
+***********************************************************************
+
+/*****************************FOREACH*PETLJA*******************************************************
+$stvari = array('Ivan'=>array('Kompjuter','NAS', 'Mobitel'),'Monika'=>array('Šminka','Torbica', 'grudnjak'));
+
+foreach($stvari as $ime => $predmeti){
+	echo '<strong>'.$ime.'</strong><br>';
+	foreach($predmeti as $stvar){
+		echo ' -'.$stvar.'<br>';
+	}
+}
+***************************************************************************************************/
 
 /*********************MULTIDIMENZIONALNA*POLJA(2DIMENZIONALNA)*************************************
 $hrana = array('ZDRAVA'=>array('mango', 'špinat', 'banane'),'NEZDRAVA'=>array('pizza', 'sladoled', 'čvarci')); // polje unutar polja čine 2dimenzionalno polje.
