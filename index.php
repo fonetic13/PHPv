@@ -1,5 +1,19 @@
 <?php
 
+
+/*********************strpos()*FUNKCIJA******************************
+$offset = 0;
+$find = 'is';
+$find_length = strlen($find);
+$string = 'This is a string, and this is an example.';
+
+while($string_position = strpos($string, $find, $offset)){
+	echo $string_position . '<br>';
+	$offset = $string_position + $find_length;
+}
+*********************************************************************/
+
+/***********************UCITAVANJE+PODATAKA*IZ*FORME******************
 if (isset($_GET['user_name']) and !empty($_GET['user_name'])){
 	$user_name = $_GET['user_name'];
 	
@@ -11,6 +25,12 @@ if (isset($_GET['user_name']) and !empty($_GET['user_name'])){
 		echo 'Pogrešni podaci, pokušaj ponovo!';
 	}
 }
+
+<form action="index.php" method="GET">
+	Korisničko ime: <input type="text" name="user_name">
+	<input type="submit" value="Submit">
+</form>
+**********************************************************************/
 
 /***************strlen()***********************************************
 $tekst = 'Ovo je tekst. ';
@@ -132,7 +152,5 @@ switch ($dan){
 	break;
 }***********************************************/
 ?>
-<form action="index.php" method="GET">
-	Korisničko ime: <input type="text" name="user_name">
-	<input type="submit" value="Submit">
-</form>
+
+
